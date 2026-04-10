@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nos soins — Dr Cristina Pizarro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__title">DR CRISTINA PIZARRO</span>
+          <span class="brand__subtitle">CHIRURGIEN-DENTISTE · CANNES</span>
+        </a>
+
+        <a class="btn btn--primary btn--sm" href="index.html">PRENDRE RDV</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section soins-page">
+        <div class="container">
+          <a href="index.html" class="back-link">← Retour au site principal</a>
+
+          <div class="soins-page__head">
+            <span class="eyebrow">Expertise</span>
+            <h1 class="section-title">Nos soins</h1>
+            <p class="soins-page__intro">
+              Découvrez l’ensemble des soins proposés au cabinet, dans une
+              approche moderne, esthétique et personnalisée.
+            </p>
+          </div>
+
+          <div class="soins-list">
+            <article class="soin-item"><span>Alignement dentaire invisible</span></article>
+            <article class="soin-item"><span>Appareil dentaire</span></article>
+            <article class="soin-item"><span>Blanchiment des dents</span></article>
+            <article class="soin-item"><span>Bruxisme</span></article>
+            <article class="soin-item"><span>Chirurgie des gencives</span></article>
+            <article class="soin-item"><span>Couronne dentaire</span></article>
+            <article class="soin-item"><span>Détartrage</span></article>
+            <article class="soin-item"><span>Facette dentaire</span></article>
+            <article class="soin-item"><span>Gingivite</span></article>
+            <article class="soin-item"><span>Gouttière dentaire</span></article>
+            <article class="soin-item"><span>Implantologie dentaire</span></article>
+            <article class="soin-item"><span>Prothèse dentaire fixe ou amovible</span></article>
+            <article class="soin-item"><span>Prothèse sur implant</span></article>
+            <article class="soin-item"><span>Surfaçage</span></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a class="brand" href="index.html">
+          <span class="brand__title">DR CRISTINA PIZARRO</span>
+          <span class="brand__subtitle">CHIRURGIEN-DENTISTE À CANNES</span>
+        </a>
+
+        <div>
+          <nav class="footer-nav">
+            <a href="#">Mentions légales</a>
+            <a href="#">Honoraires</a>
+            <a href="#">RGPD</a>
+          </nav>
+          <div class="footer-copy" style="margin-top: 1.625rem; text-align: center">
+            © 2024 Dr Cristina Pizarro — Site premium
+          </div>
+        </div>
+
+        <div class="socials">
+          <a class="social" href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.8 6.7a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1z"
+              />
+            </svg>
+          </a>
+          <a class="social" href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M4.98 3.5a2.48 2.48 0 1 1 0 4.96 2.48 2.48 0 0 1 0-4.96zM3 9h4v12H3zm7 0h3.8v1.7h.05c.53-1 1.82-2.06 3.75-2.06 4.01 0 4.75 2.64 4.75 6.08V21h-4v-5.53c0-1.32-.02-3.02-1.84-3.02-1.85 0-2.13 1.44-2.13 2.93V21h-4z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+      <script>
+  document.documentElement.classList.add("is-ready");
+
+  const revealGroups = [
+    { selector: ".soins-page .back-link", base: "reveal" },
+    { selector: ".soins-page__head > *", base: "reveal", stagger: true },
+    { selector: ".soins-list .soin-item", base: "reveal", stagger: true },
+  ];
+
+  revealGroups.forEach((group) => {
+    const elements = document.querySelectorAll(group.selector);
+
+    elements.forEach((el, index) => {
+      el.classList.add(group.base);
+
+      if (group.stagger) {
+        const delayClass = `delay-${(index % 6) + 1}`;
+        el.classList.add(delayClass);
+      }
+    });
+  });
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          obs.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.14,
+      rootMargin: "0px 0px -8% 0px"
+    }
+  );
+
+  document
+    .querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-zoom")
+    .forEach((el) => observer.observe(el));
+
+  window.addEventListener("load", () => {
+    document
+      .querySelectorAll(".soins-page .reveal, .soins-page .reveal-left, .soins-page .reveal-right, .soins-page .reveal-zoom")
+      .forEach((el) => {
+        el.classList.add("is-visible");
+      });
+  });
+</script>
+  </body>
+</html>
