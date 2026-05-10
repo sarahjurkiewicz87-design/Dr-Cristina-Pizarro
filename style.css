@@ -1898,6 +1898,15 @@ textarea {
   .site-header__inner .btn--sm {
     display: none;
   }
+
+  /* Masquer les triangles FAQ sur mobile */
+  .faq-arrow {
+    display: none;
+  }
+
+  .faq-trigger {
+    grid-template-columns: 1fr 2.125rem;
+  }
 }
 
 /* Sur tablette intermédiaire : afficher burger, masquer nav */
