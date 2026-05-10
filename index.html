@@ -22,33 +22,72 @@
 
         <nav class="nav">
           <a href="#accueil">Accueil</a>
+          <a href="#apropos">Cabinet</a>
           <a href="#soins">Soins</a>
-          <a href="#apropos">À propos</a>
-          <a href="#faq">FAQ</a>
+          <a href="#faq">Informations</a>
           <a href="#contact">Contact</a>
         </nav>
 
-        <a class="btn btn--primary btn--sm" href="https://www.doctolib.fr/dentiste/cannes/cristina-pizarro-cannes">Prendre RDV</a>
+        <div class="header-right">
+          <a
+            class="btn btn--primary btn--sm"
+            href="https://www.doctolib.fr/dentiste/cannes/cristina-pizarro-cannes"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Prendre RDV
+          </a>
+          <button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
     </header>
+
+    <!-- Menu mobile overlay -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav class="mobile-menu__nav">
+        <a href="#accueil" class="mobile-menu__link">Accueil</a>
+        <a href="#apropos" class="mobile-menu__link">Cabinet</a>
+        <a href="#soins" class="mobile-menu__link">Soins</a>
+        <a href="#faq" class="mobile-menu__link">Informations</a>
+        <a href="#contact" class="mobile-menu__link">Contact</a>
+      </nav>
+      <a
+        class="btn btn--primary mobile-menu__cta"
+        href="https://www.doctolib.fr/dentiste/cannes/cristina-pizarro-cannes"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Prendre rendez-vous
+      </a>
+    </div>
 
     <main>
       <section class="hero" id="accueil">
         <div class="hero__grid">
           <div class="hero__left">
             <div class="hero__content">
-              <span class="eyebrow">Bienvenue au cabinet</span>
+              <span class="eyebrow">Cabinet dentaire</span>
               <h1>
-                Votre sourire<br />
-                entre de <em>bonnes<br />mains</em>
+                Dr Cristina Pizarro<br />
+                Chirurgien-dentiste
               </h1>
               <p>
-                Une approche humaine et technologique pour une santé
-                bucco-dentaire d'excellence au cœur de Cannes.
+                Le cabinet vous accueille à Cannes pour la prise en charge des soins dentaires,
+                sur rendez-vous.
               </p>
               <div class="hero__actions">
-                <a class="btn btn--primary" href="#https://www.doctolib.fr/dentiste/cannes/cristina-pizarro-cannes">Prendre rendez-vous</a>
-                <a class="btn btn--secondary" href="soins.html">Découvrir mes soins</a>
+                <a
+                  class="btn btn--primary"
+                  href="https://www.doctolib.fr/dentiste/cannes/cristina-pizarro-cannes"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Prendre rendez-vous
+                </a>
               </div>
             </div>
           </div>
@@ -67,94 +106,55 @@
         <div class="container about__grid">
           <div class="portrait-card">
             <img src="photo.png" alt="Dr Cristina Pizarro" />
-
-            
           </div>
 
           <div class="about__text">
-            <h2>Une approche moderne et humaine</h2>
+            <h2>La pratitienne</h2>
             <p>
-              Forte d'une expérience internationale entre le Luxembourg, la
-              France et l'Espagne, j'ai conçu ce cabinet comme un espace de soin
-              serein et haut de gamme.
+              Le cabinet accompagne les patients dans leur suivi bucco-dentaire à travers une pratique fondée sur la prévention, la précision et la continuité des soins.
             </p>
             <p>
-              Mon parcours m'a permis de me spécialiser en parodontologie et
-              implantologie chirurgicale, avec une attention particulière portée
-              à l'esthétique et aux technologies Laser de pointe.
+              Les traitements réalisés au cabinet s’inscrivent dans une approche moderne de la dentisterie, intégrant notamment les technologies d’empreinte numérique et une prise en charge personnalisée
             </p>
             <p>
-              Chaque patient bénéficie d'un accompagnement personnalisé, où la
-              douceur du soin rencontre la précision chirurgicale.
+              Une importance particulière est accordée à l’écoute, à la compréhension des besoins du patient et à la qualité du suivi clinique.
             </p>
             <div class="mini-label">Cabinet libéral</div>
           </div>
         </div>
       </section>
 
-      <section class="section why">
+      <section class="section why" id="reperes">
         <div class="container">
           <div class="why__head">
-            <span class="eyebrow">Pourquoi me choisir</span>
+            <span class="eyebrow">Informations du cabinet</span>
             <h2 class="section-title" style="margin-top: 24px">
-              Mes standards de soin
+              Repères utiles
             </h2>
           </div>
 
           <div class="why__cards">
             <article class="card">
-              <div class="icon-box">
-                <svg viewBox="0 0 24 24">
-                  <path d="M20 4L9 15" />
-                  <path d="M15 4h5v5" />
-                  <path d="M4 20l7-7" />
-                  <path d="M5 9l10 10" />
-                </svg>
-              </div>
-              <h3 class="serif">Soins en douceur</h3>
+              <div class="card__num">01</div>
+              <h3 class="serif">Prise de rendez-vous</h3>
               <p>
-                Une prise en charge indolore et rassurante pour votre confort
-                absolu.
+                Les rendez-vous peuvent être pris par téléphone ou en ligne via Doctolib.
               </p>
             </article>
 
             <article class="card">
-              <div class="icon-box">
-                <svg viewBox="0 0 24 24">
-                  <path d="M7 4v16" />
-                  <path d="M7 20h10" />
-                  <path d="M10 4h7v7" />
-                  <path d="M10 11h7" />
-                </svg>
-              </div>
-              <h3 class="serif">Technologie moderne</h3>
+              <div class="card__num">02</div>
+              <h3 class="serif">Horaires & Accès</h3>
               <p>
-                Équipements de dernière génération, incluant le LASER dentaire.
+                Le cabinet est situé au 6 Boulevard Carnot, Cannes. Les horaires sont disponibles dans la rubrique contact.
               </p>
             </article>
 
             <article class="card">
-              <div class="icon-box">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 20s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 10c0 5.65-7 10-7 10z"
-                  />
-                </svg>
-              </div>
-              <h3 class="serif">Accompagnement</h3>
-              <p>Un suivi personnalisé et des conseils adaptés à chaque sourire.</p>
-            </article>
-
-            <article class="card">
-              <div class="icon-box">
-                <svg viewBox="0 0 24 24">
-                  <path d="M12 3l7 3v5c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-3z" />
-                  <path d="M9 12l2 2 4-4" />
-                </svg>
-              </div>
-              <h3 class="serif">Hygiène absolue</h3>
+              <div class="card__num">03</div>
+              <h3 class="serif">Information des patients</h3>
               <p>
-                Protocoles de stérilisation et d'hygiène rigoureux et certifiés.
+                Les contenus du site sont donnés à titre informatif et ne remplacent pas un avis médical personnalisé.
               </p>
             </article>
           </div>
@@ -165,145 +165,99 @@
         <div class="container">
           <div class="care__head">
             <div>
-              <span class="eyebrow">Expertise chirurgicale</span>
+              <span class="eyebrow">Soins proposés au cabinet</span>
               <h2 class="section-title" style="margin-top: 22px">
-                Mes Soins & Traitements
+                Soins
               </h2>
             </div>
-            <a class="care__link" href="https://www.doctolib.fr/dentiste/cannes/cristina-pizarro-cannes">Consulter sur Doctolib</a>
           </div>
 
-          <div class="care__cta">
-  <p>
-    Découvrez l’ensemble des soins proposés au cabinet, avec une approche moderne, esthétique et personnalisée.
-  </p>
+          <div class="carousel-wrapper">
+            <div class="carousel-track" id="carouselTrack">
+              <div class="carousel-item">
+                <div class="carousel-item__number">01</div>
+                <h3 class="carousel-item__title serif">Alignement dentaire invisible</h3>
+                <p class="carousel-item__desc">Redressement discret des dents grâce à des gouttières transparentes sur mesure, sans bagues ni fils.</p>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item__number">02</div>
+                <h3 class="carousel-item__title serif">Appareil dentaire</h3>
+                <p class="carousel-item__desc">Correction orthodontique adaptée à chaque patient pour rétablir l'alignement et l'occlusion dentaire.</p>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item__number">03</div>
+                <h3 class="carousel-item__title serif">Blanchiment des dents</h3>
+                <p class="carousel-item__desc">Éclaircissement professionnel pour retrouver un sourire lumineux, réalisé en toute sécurité au cabinet.</p>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item__number">04</div>
+                <h3 class="carousel-item__title serif">Bruxisme</h3>
+                <p class="carousel-item__desc">Prise en charge du grincement des dents par gouttière de protection et suivi personnalisé.</p>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item__number">05</div>
+                <h3 class="carousel-item__title serif">Chirurgie des gencives</h3>
+                <p class="carousel-item__desc">Interventions parodontales pour traiter les pathologies gingivales et restaurer une santé bucco-dentaire durable.</p>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item__number">06</div>
+                <h3 class="carousel-item__title serif">Couronne dentaire</h3>
+                <p class="carousel-item__desc">Reconstitution d'une dent abîmée ou fragilisée par une couronne prothétique esthétique et résistante.</p>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item__number">07</div>
+                <h3 class="carousel-item__title serif">Détartrage</h3>
+                <p class="carousel-item__desc">Nettoyage professionnel pour éliminer le tartre et le plaque, indispensable à la prévention des maladies parodontales.</p>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item__number">08</div>
+                <h3 class="carousel-item__title serif">Facette dentaire</h3>
+                <p class="carousel-item__desc">Fine coque en céramique posée sur la face visible de la dent pour corriger forme, couleur ou légères irrégularités.</p>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item__number">09</div>
+                <h3 class="carousel-item__title serif">Gingivite</h3>
+                <p class="carousel-item__desc">Traitement de l'inflammation gingivale à un stade précoce pour prévenir toute évolution vers une parodontite.</p>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item__number">10</div>
+                <h3 class="carousel-item__title serif">Gouttière dentaire</h3>
+                <p class="carousel-item__desc">Dispositif de protection sur mesure pour protéger les dents la nuit ou lors d'activités sportives.</p>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item__number">11</div>
+                <h3 class="carousel-item__title serif">Implantologie dentaire</h3>
+                <p class="carousel-item__desc">Remplacement d'une dent manquante par un implant en titane offrant confort, stabilité et esthétique optimaux.</p>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item__number">12</div>
+                <h3 class="carousel-item__title serif">Prothèse dentaire fixe ou amovible</h3>
+                <p class="carousel-item__desc">Solutions prothétiques adaptées pour restaurer la fonction masticatoire et l'esthétique du sourire.</p>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item__number">13</div>
+                <h3 class="carousel-item__title serif">Prothèse sur implant</h3>
+                <p class="carousel-item__desc">Couronne ou bridge fixé sur implant pour un résultat naturel et une tenue optimale au quotidien.</p>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item__number">14</div>
+                <h3 class="carousel-item__title serif">Surfaçage</h3>
+                <p class="carousel-item__desc">Nettoyage en profondeur des racines dentaires pour traiter la parodontite et stabiliser la santé des gencives.</p>
+              </div>
+            </div>
 
-  <a class="btn btn--primary" href="soins.html">
-    Voir tous les soins
-  </a>
-</div>
-        </div>
-      </section>
-
-      <section class="section experience">
-        <div class="container experience__grid">
-          <div class="experience__sticky">
-            <span class="eyebrow">Parcours & excellence</span>
-            <h2 class="section-title" style="margin-top: 18px">
-              Formation & Expérience
-            </h2>
-            <p class="experience__intro" style="margin-top: 34px; max-width: 560px">
-              Un cursus académique d'excellence combiné à une pratique
-              internationale rigoureuse pour vous offrir les meilleurs standards
-              de soins.
-            </p>
-
-            <div class="appointment-card">
-              <div class="appointment-card__top">
-                <svg
-                  class="calendar-icon"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                >
-                  <path d="M7 2v4" />
-                  <path d="M17 2v4" />
-                  <rect x="3" y="4" width="18" height="18" rx="2" />
-                  <path d="M3 10h18" />
+            <div class="carousel-controls">
+              <button class="carousel-btn" id="carouselPrev" aria-label="Précédent">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"/>
                 </svg>
-                <div>
-                  <div class="appointment-card__label">Depuis</div>
-                  <div class="appointment-card__date">2018 à Cannes</div>
-                </div>
-              </div>
-              <a class="btn btn--primary" href="https://www.doctolib.fr/dentiste/cannes/cristina-pizarro-cannes">Prendre rendez-vous</a>
-            </div>
-          </div>
-
-          <div>
-            <div class="timeline-group">
-              <h3 class="timeline-title">Diplômes & Formations</h3>
-              <div class="timeline-list">
-                <article class="timeline-item">
-                  <div class="timeline-item__year">2025</div>
-                  <div class="timeline-item__title">
-                    Mastership in LASER dentistry
-                  </div>
-                  <div class="timeline-item__subtitle">
-                    Aachen Center for Laser Dentistry & Sigmund Freud
-                    University, Autriche
-                  </div>
-                </article>
-
-                <article class="timeline-item">
-                  <div class="timeline-item__year">2021</div>
-                  <div class="timeline-item__title">PRF et prélèvement sanguin</div>
-                  <div class="timeline-item__subtitle">Nice, France</div>
-                </article>
-
-                <article class="timeline-item">
-                  <div class="timeline-item__year">2020</div>
-                  <div class="timeline-item__title">
-                    D.U. Parodontologie et implantologie chirurgicale
-                  </div>
-                  <div class="timeline-item__subtitle">
-                    UFR d'odontologie de Nice
-                  </div>
-                </article>
-
-                <article class="timeline-item">
-                  <div class="timeline-item__year">2019</div>
-                  <div class="timeline-item__title">
-                    A.E.U. Parodontologie et implantologie
-                  </div>
-                  <div class="timeline-item__subtitle">
-                    UFR d'odontologie de Nice
-                  </div>
-                </article>
-
-                <article class="timeline-item">
-                  <div class="timeline-item__year">2018</div>
-                  <div class="timeline-item__title">
-                    D.U. en Esthétique Péribuccale
-                  </div>
-                  <div class="timeline-item__subtitle">UCAM</div>
-                </article>
-
-                <article class="timeline-item">
-                  <div class="timeline-item__year">2012</div>
-                  <div class="timeline-item__title">
-                    Diplôme d'État de docteur en chirurgie dentaire
-                  </div>
-                  <div class="timeline-item__subtitle">
-                    Université de Séville, Espagne
-                  </div>
-                </article>
-              </div>
-            </div>
-
-            <div class="timeline-group">
-              <h3 class="timeline-title">Expérience Professionnelle</h3>
-              <div class="experience-list">
-                <article class="exp-row">
-                  <div class="exp-row__title">Cabinet Libéral, Cannes</div>
-                  <div class="exp-row__date">Depuis 2018</div>
-                </article>
-
-                <article class="exp-row">
-                  <div class="exp-row__title">Cabinet Libéral, Luxembourg</div>
-                  <div class="exp-row__date" style="color: #9aa4b2">
-                    2015 — 2018
-                  </div>
-                </article>
-
-                <article class="exp-row">
-                  <div class="exp-row__title">Cabinet Libéral, Troyes</div>
-                  <div class="exp-row__date" style="color: #9aa4b2">
-                    2013 — 2015
-                  </div>
-                </article>
-              </div>
+              </button>
+              <div class="carousel-dots" id="carouselDots"></div>
+              <button class="carousel-btn" id="carouselNext" aria-label="Suivant">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"/>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -312,9 +266,9 @@
       <section class="section faq" id="faq">
         <div class="container">
           <div class="faq__head">
-            <span class="eyebrow">Questions fréquentes</span>
+            <span class="eyebrow">Informations pratiques</span>
             <h2 class="section-title" style="margin-top: 20px">
-              Informations Patients
+              Questions fréquentes
             </h2>
           </div>
 
@@ -322,69 +276,44 @@
             <article class="faq-item">
               <button class="faq-trigger" type="button">
                 <span class="faq-arrow">▶</span>
-                <span class="faq-question">Est-ce que les soins sont douloureux ?</span>
+                <span class="faq-question">Comment prendre rendez-vous ?</span>
                 <span class="faq-plus">+</span>
               </button>
               <div class="faq-answer">
-                Non, le cabinet privilégie des protocoles doux, une anesthésie
-                adaptée et une approche rassurante pour limiter au maximum
-                l'inconfort.
+                Les rendez-vous peuvent être pris par téléphone ou via Doctolib.
               </div>
             </article>
 
             <article class="faq-item">
               <button class="faq-trigger" type="button">
                 <span class="faq-arrow">▶</span>
-                <span class="faq-question">Combien coûte un détartrage ?</span>
+                <span class="faq-question">Le cabinet reçoit-il sur rendez-vous ?</span>
                 <span class="faq-plus">+</span>
               </button>
               <div class="faq-answer">
-                Le tarif dépend de votre situation clinique et de la prise en
-                charge. Le plus simple reste de demander un avis personnalisé
-                lors d'une consultation.
+                Oui, les consultations au cabinet se font sur rendez-vous.
               </div>
             </article>
 
             <article class="faq-item">
               <button class="faq-trigger" type="button">
                 <span class="faq-arrow">▶</span>
-                <span class="faq-question">
-                  À quelle fréquence consulter un dentiste ?
-                </span>
+                <span class="faq-question">Que faire en cas d’urgence ?</span>
                 <span class="faq-plus">+</span>
               </button>
               <div class="faq-answer">
-                En règle générale, une visite de contrôle tous les 6 à 12 mois
-                est recommandée afin de prévenir les problèmes avant qu'ils ne
-                s'aggravent.
+                En cas d’urgence, il convient de contacter directement le cabinet par téléphone.
               </div>
             </article>
 
             <article class="faq-item">
               <button class="faq-trigger" type="button">
                 <span class="faq-arrow">▶</span>
-                <span class="faq-question">Proposez-vous des urgences ?</span>
+                <span class="faq-question">Où se situe le cabinet ?</span>
                 <span class="faq-plus">+</span>
               </button>
               <div class="faq-answer">
-                Oui, selon les disponibilités du cabinet. En cas d'urgence, il
-                faut contacter directement le secrétariat pour une orientation
-                rapide.
-              </div>
-            </article>
-
-            <article class="faq-item">
-              <button class="faq-trigger" type="button">
-                <span class="faq-arrow">▶</span>
-                <span class="faq-question">
-                  Est-ce que le blanchiment abîme les dents ?
-                </span>
-                <span class="faq-plus">+</span>
-              </button>
-              <div class="faq-answer">
-                Réalisé avec des produits adaptés et sous contrôle professionnel,
-                le blanchiment est encadré pour respecter l'émail et la
-                sensibilité dentaire.
+                Le cabinet est situé au 6 Boulevard Carnot, 06400 Cannes.
               </div>
             </article>
           </div>
@@ -402,9 +331,7 @@
                 <div class="contact-info__row">
                   <div class="contact-info__icon">
                     <svg viewBox="0 0 24 24">
-                      <path
-                        d="M12 21s6-6 6-11a6 6 0 1 0-12 0c0 5 6 11 6 11z"
-                      />
+                      <path d="M12 21s6-6 6-11a6 6 0 1 0-12 0c0 5 6 11 6 11z" />
                       <circle cx="12" cy="10" r="2.5" />
                     </svg>
                   </div>
@@ -419,15 +346,29 @@
                 <div class="contact-info__row">
                   <div class="contact-info__icon">
                     <svg viewBox="0 0 24 24">
-                      <path
-                        d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1A19.4 19.4 0 0 1 5.2 12.8 19.8 19.8 0 0 1 2.1 4.1 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.5 3a2 2 0 0 1-.6 1.8L7.8 9.7a16 16 0 0 0 6.5 6.5l1.2-1.2a2 2 0 0 1 1.8-.6l3 .5A2 2 0 0 1 22 16.9z"
-                      />
+                      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1A19.4 19.4 0 0 1 5.2 12.8 19.8 19.8 0 0 1 2.1 4.1 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.5 3a2 2 0 0 1-.6 1.8L7.8 9.7a16 16 0 0 0 6.5 6.5l1.2-1.2a2 2 0 0 1 1.8-.6l3 .5A2 2 0 0 1 22 16.9z"/>
                     </svg>
                   </div>
                   <div>
                     <div class="contact-info__label">Téléphone</div>
                     <div class="contact-info__value">
                       <strong>04 93 39 00 00</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="contact-info__row">
+                  <div class="contact-info__icon">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M4 4h16v16H4z" />
+                      <path d="M4 7l8 6 8-6" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-info__label">E-mail</div>
+                    <div class="contact-info__value">
+                      <strong>[À RENSEIGNER]</strong><br />
+                      <small>Attention : les échanges par e-mail ne garantissent pas la confidentialité des informations de santé.</small>
                     </div>
                   </div>
                 </div>
@@ -448,28 +389,45 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="contact-info__row">
+                  <div class="contact-info__icon">
+                    <svg viewBox="0 0 24 24">
+                      <path d="M12 3l7 3v5c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-3z" />
+                      <path d="M9 12l2 2 4-4" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="contact-info__label">Identification ordinale</div>
+                    <div class="contact-info__value">
+                      <strong>N° d'inscription au tableau de l'Ordre : [À RENSEIGNER]</strong>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <a
-                class="btn btn--primary"
-                href="https://www.doctolib.fr/dentiste/cannes/cristina-pizarro-cannes"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Prendre rendez-vous sur Doctolib
-              </a>
+  class="btn btn--primary btn--contact"
+  href="https://www.doctolib.fr/dentiste/cannes/cristina-pizarro-cannes"
+  target="_blank"
+  rel="noreferrer"
+>
+  Prendre rendez-vous sur Doctolib
+</a>
             </div>
 
             <div class="contact-card__right">
-              <div class="map-placeholder">
-                <svg viewBox="0 0 24 24">
-                  <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2V6z" />
-                  <path d="M9 4v14" />
-                  <path d="M15 6v14" />
-                </svg>
-                <strong>Google Maps Interactive</strong>
-                <span>Cannes, France</span>
-              </div>
+              <iframe
+                class="map-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d724.2!2d7.0139!3d43.5528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce81898d8f9b29%3A0x5a4e5e5e5e5e5e5e!2s6+Boulevard+Carnot%2C+06400+Cannes!5e0!3m2!1sfr!2sfr!4v1"
+                width="100%"
+                height="100%"
+                style="border:0; display:block; width:100%; height:100%; min-height:16rem;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Cabinet Dr Cristina Pizarro — 6 Boulevard Carnot, Cannes"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -485,30 +443,16 @@
 
         <div>
           <nav class="footer-nav">
-            <a href="#">Mentions légales</a>
-            <a href="#">Honoraires</a>
-            <a href="#">RGPD</a>
+            <a href="mentions-legales.html">Mentions légales</a>
+            <a href="honoraires.html">Honoraires</a>
+            <a href="rgpd.html">RGPD</a>
+            <a href="https://www.ordre-chirurgiens-dentistes.fr/" target="_blank" rel="noreferrer">
+              Ordre des chirurgiens-dentistes
+            </a>
           </nav>
           <div class="footer-copy" style="margin-top: 26px; text-align: center">
-            © 2024 Dr Cristina Pizarro — Site premium
+            © 2024 Dr Cristina Pizarro
           </div>
-        </div>
-
-        <div class="socials">
-          <a class="social" href="#" aria-label="Instagram">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.8 6.7a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1z"
-              />
-            </svg>
-          </a>
-          <a class="social" href="#" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M4.98 3.5a2.48 2.48 0 1 1 0 4.96 2.48 2.48 0 0 1 0-4.96zM3 9h4v12H3zm7 0h3.8v1.7h.05c.53-1 1.82-2.06 3.75-2.06 4.01 0 4.75 2.64 4.75 6.08V21h-4v-5.53c0-1.32-.02-3.02-1.84-3.02-1.85 0-2.13 1.44-2.13 2.93V21h-4z"
-              />
-            </svg>
-          </a>
         </div>
       </div>
     </footer>
@@ -516,7 +460,6 @@
     <script>
   document.documentElement.classList.add("is-ready");
 
-  /* FAQ */
   document.querySelectorAll(".faq-trigger").forEach((button) => {
     button.addEventListener("click", () => {
       const item = button.closest(".faq-item");
@@ -524,7 +467,6 @@
     });
   });
 
-  /* Apparitions progressives */
   const revealGroups = [
     { selector: ".hero__content > *", base: "reveal", stagger: true },
     { selector: ".hero__image", base: "reveal-zoom" },
@@ -536,12 +478,7 @@
     { selector: ".why__cards .card", base: "reveal", stagger: true },
 
     { selector: ".care__head > *", base: "reveal", stagger: true },
-    { selector: ".care__cta > *", base: "reveal", stagger: true },
-
-    { selector: ".experience__sticky > *", base: "reveal-left", stagger: true },
-    { selector: ".timeline-group", base: "reveal-right", stagger: true },
-    { selector: ".timeline-item", base: "reveal", stagger: true },
-    { selector: ".exp-row", base: "reveal", stagger: true },
+    { selector: ".carousel-item", base: "reveal", stagger: true },
 
     { selector: ".faq__head > *", base: "reveal", stagger: true },
     { selector: ".faq-item", base: "reveal", stagger: true },
@@ -549,6 +486,9 @@
     { selector: ".contact-card__left > *", base: "reveal-left", stagger: true },
     { selector: ".contact-card__right", base: "reveal-right" },
 
+    { selector: ".footer .brand", base: "reveal-left" },
+    { selector: ".footer-nav a", base: "reveal", stagger: true },
+    { selector: ".footer-copy", base: "reveal" }
   ];
 
   revealGroups.forEach((group) => {
@@ -558,8 +498,7 @@
       el.classList.add(group.base);
 
       if (group.stagger) {
-        const delayClass = `delay-${(index % 6) + 1}`;
-        el.classList.add(delayClass);
+        el.classList.add(`delay-${(index % 6) + 1}`);
       }
     });
   });
@@ -583,7 +522,6 @@
     .querySelectorAll(".reveal, .reveal-left, .reveal-right, .reveal-zoom")
     .forEach((el) => observer.observe(el));
 
-  /* Hero visible direct au chargement */
   window.addEventListener("load", () => {
     document
       .querySelectorAll(".hero .reveal, .hero .reveal-left, .hero .reveal-right, .hero .reveal-zoom")
@@ -591,6 +529,182 @@
         el.classList.add("is-visible");
       });
   });
+
+  // ── BURGER MENU ───────────────────────────────────────
+  (function () {
+    const btn = document.getElementById("burgerBtn");
+    const menu = document.getElementById("mobileMenu");
+
+    if (!btn || !menu) return;
+
+    const links = menu.querySelectorAll(".mobile-menu__link, .mobile-menu__cta");
+
+    function openMenu() {
+      btn.classList.add("is-open");
+      btn.setAttribute("aria-expanded", "true");
+      menu.classList.add("is-open");
+      menu.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeMenu() {
+      btn.classList.remove("is-open");
+      btn.setAttribute("aria-expanded", "false");
+      menu.classList.remove("is-open");
+      menu.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    btn.addEventListener("click", () => {
+      btn.classList.contains("is-open") ? closeMenu() : openMenu();
+    });
+
+    links.forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    menu.addEventListener("click", (e) => {
+      if (e.target === menu) closeMenu();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeMenu();
+    });
+  })();
+
+  // ── CAROUSEL ──────────────────────────────────────────
+  (function () {
+    const track = document.getElementById("carouselTrack");
+    const dotsContainer = document.getElementById("carouselDots");
+    const btnPrev = document.getElementById("carouselPrev");
+    const btnNext = document.getElementById("carouselNext");
+
+    if (!track || !dotsContainer || !btnPrev || !btnNext) return;
+
+    const items = Array.from(track.querySelectorAll(".carousel-item"));
+
+    let current = 0;
+    let ipv = getIPV();
+    let maxIndex = 0;
+
+    function getIPV() {
+      if (window.innerWidth < 640) return 1;
+      if (window.innerWidth < 1024) return 2;
+      return 3;
+    }
+
+    function recalc() {
+      ipv = getIPV();
+      maxIndex = Math.max(0, items.length - ipv);
+      current = Math.min(current, maxIndex);
+    }
+
+    function step(dir) {
+      goTo(current + dir * ipv);
+    }
+
+    function goTo(index) {
+      current = Math.max(0, Math.min(index, maxIndex));
+
+      const itemWidth = items[0].getBoundingClientRect().width;
+      const gap = parseFloat(getComputedStyle(track).gap) || 0;
+      track.style.transform = `translateX(-${current * (itemWidth + gap)}px)`;
+
+      updateDots();
+      updateActiveItems();
+
+      btnPrev.disabled = current === 0;
+      btnNext.disabled = current >= maxIndex;
+    }
+
+    function updateActiveItems() {
+      items.forEach((item, i) => {
+        item.classList.toggle("is-active", i >= current && i < current + ipv);
+      });
+    }
+
+    function buildDots() {
+      dotsContainer.innerHTML = "";
+      const pages = Math.ceil(items.length / ipv);
+
+      for (let i = 0; i < pages; i++) {
+        const d = document.createElement("button");
+        d.className = "carousel-dot";
+        d.setAttribute("aria-label", "Page " + (i + 1));
+
+        d.addEventListener("click", () => {
+          stopAuto();
+          goTo(i * ipv);
+          startAuto();
+        });
+
+        dotsContainer.appendChild(d);
+      }
+
+      updateDots();
+    }
+
+    function updateDots() {
+      const page = Math.floor(current / ipv);
+
+      document.querySelectorAll(".carousel-dot").forEach((d, i) => {
+        d.classList.toggle("is-active", i === page);
+      });
+    }
+
+    track.addEventListener(
+      "wheel",
+      (e) => {
+        if (Math.abs(e.deltaX) > Math.abs(e.deltaY) || e.shiftKey) {
+          e.preventDefault();
+          const delta = e.deltaX || e.deltaY;
+          if (delta > 30) goTo(current + ipv);
+          else if (delta < -30) goTo(current - ipv);
+        }
+      },
+      { passive: false }
+    );
+
+    let startX = 0;
+    let dragging = false;
+
+    track.addEventListener("pointerdown", (e) => {
+      startX = e.clientX;
+      dragging = true;
+      track.setPointerCapture(e.pointerId);
+    });
+
+    track.addEventListener("pointermove", (e) => {
+      if (!dragging) return;
+      const gap = parseFloat(getComputedStyle(track).gap) || 0;
+      const w = items[0].getBoundingClientRect().width + gap;
+      const diff = startX - e.clientX;
+      track.style.transform = `translateX(-${current * w + diff}px)`;
+    });
+
+    track.addEventListener("pointerup", (e) => {
+      if (!dragging) return;
+      dragging = false;
+      const diff = startX - e.clientX;
+      const threshold = items[0].getBoundingClientRect().width * 0.2;
+      if (diff > threshold) goTo(current + 1);
+      else if (diff < -threshold) goTo(current - 1);
+      else goTo(current);
+    });
+
+    btnPrev.addEventListener("click", () => { step(-1); });
+    btnNext.addEventListener("click", () => { step(1); });
+
+    window.addEventListener("resize", () => {
+      recalc();
+      buildDots();
+      goTo(current);
+    });
+
+    recalc();
+    buildDots();
+    goTo(0);
+  })();
 </script>
   </body>
 </html>
